@@ -11,6 +11,11 @@ html {
     font-family: sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 header {
     background-image: url('../img/jumbo.png');
     background-size: cover;
@@ -20,30 +25,26 @@ header {
     color: white;
 }
 
+/* utility class */
 .container-measures {
     width: 75%;
     margin: 0 auto;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
 header nav {
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 30px;
 }
 
 header .menu {
-    /* background-color: violet; */
     list-style-type: none;
     display: flex;
     gap: 40px;
 }
 
+/* utility class */
 .button {
     border-radius: 25px;
     padding: 15px;
@@ -181,28 +182,22 @@ footer {
     justify-content: space-between;
 }
 
-.container .foot-header {
-    /* width: 300px; */
-    /* height: 300px; */
+.inner-container .foot-header {
     max-width: 30%;
-    /* background-color: lightsalmon; */
-    /* padding: 10px; */
-    /* display: flex;
-    flex-direction: column;
-    gap: 10px; */
 }
 
-.foot-header h3 {
+.inner-container .foot-header h3 {
     font-size: 30px;
     color: #8fa1e1;
 }
 
-.foot-header .language {
+.inner-container .foot-header .language {
     margin: 20px 0;
 }
 
 .foot-header .language > span::after {
     content: '\0002c5';
+    font-size: 30px;
     color: white;
 }
 
@@ -218,10 +213,6 @@ footer {
     border-radius: 50%;
     display: inline-block;
 }
-
-/* .foot-header .socials .a {
-    color: white;
-} */
 
 .foot-nav {
     margin: 0 auto;
@@ -256,14 +247,5 @@ footer .inner-container a.button {
     color: white;
     background-color: #8fa1e1;
 }
-
-button {
-    border-radius: 30px;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
 
 /*  EXERCISE COMPLETED  */
