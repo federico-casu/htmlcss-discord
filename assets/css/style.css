@@ -7,108 +7,160 @@
     /* border: 1px solid lime; */
 }
 
+html {
+    font-family: sans-serif;
+}
+
 header {
-    background-color: #3161e0;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.container-measures {
+    width: 75%;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 header nav {
     height: 100px;
-    width: 75%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a {
-    color: white;
-}
-
-header .main-section {
-    min-height: 500px;
-    /* background-color: red; */
-    padding-top: 50px
-}
-
-header .main-section .flex-container {
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    gap: 30px;
-}
-
-.logo, button {
-    width: 100px;
-    height: 50px;
-    background-color: yellow;
-    display: block;
-}
-
 header .menu {
-    background-color: violet;
+    /* background-color: violet; */
     list-style-type: none;
     display: flex;
     gap: 40px;
 }
 
-.main-section h1 {
-    width: 500px;
-    height: 80px;
-    background-color: orange;
+.button {
+    border-radius: 25px;
+    padding: 15px;
 }
 
-.main-section p {
-    width: 700px;
-    height: 120px;
-    background-color: aqua;
+header nav > .button {
+    color: black;
+    background-color: white;
 }
 
-.main-section .main-buttons {
+#cta {
+    /* width: 1000px;
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 30px; */
+    width: 40%;
+    margin: 100px auto 0 auto;
+    text-align: center;
 }
 
-/* body {
-    background-color: #f6f6f6;
-} */
+.logo, button {
+    /* width: 100px;
+    height: 50px;
+    background-color: yellow; */
+    /* display: block; */
+}
+
+#cta h1, #cta p, #cta .main-buttons {
+    /* width: 500px;
+    height: 80px; */
+    /* background-color: orange; */
+    margin-bottom: 50px;
+}
+
+#cta .main-buttons .button:first-child {
+    color: black;
+    background-color: white;
+    margin-right: 20px;
+}
+
+#cta .main-buttons .button:first-child::before {
+    content: '\2193';
+    font-weight: bold;
+}
+
+#cta .main-buttons .button:last-child {
+    color: white;
+    background-color: black;
+}
 
 main section {
-    min-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
+    padding-block: 20px;
 }
 
-.section-image, .section-article {
-    width: 400px;
-    height: 400px;
-    background-color: lightcoral;
+main section .img-text-container{
+    /* min-height: 600px; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* gap: 10%; */
+}
+
+section .img-text-container .section-image{
+    flex-basis: 60%;
+    margin-right: 10px;
+}
+
+section .img-text-container .section-image img{
     padding: 20px;
 }
 
+section .img-text-container .section-article{
+    flex-basis: 40%;
+    margin-left: 10px;
+    padding: 40px 20px 0;
+}
+
+section .img-text-container .section-article h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+section .img-text-container .section-article p {
+    line-height: 25px;
+    padding: 5px;
+}
+
+.section-image, .section-article {
+    /* width: 400px;
+    height: 400px; */
+    border: 1px dashed black;
+    background-color: lightcoral;
+    /* padding: 20px; */
+}
+
 .section-article {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; */
 }
 
 .section-article h2, .section-article p {
-    width: 100%;
+    /* width: 100%; */
     /* height: 50%; */
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
-.section-article h2 {
+/* .section-article h2 {
     height: 60%;
 }
 
 .section-article p {
     height: 40%;
-}
+} */
 
 #first, #third {
     background-color: white;
@@ -123,13 +175,14 @@ main section {
 }
 
 #last {
-    display: flex;
+    /* display: flex;
     flex-direction: column-reverse;
     gap: 50px;
-    padding: 30px;
+    padding: 30px; */
+    text-align: center;
 }
 
-#last .section-article {
+/* #last .section-article {
     width: 1000px;
     height: 200px;
 }
@@ -142,17 +195,17 @@ main section {
 #last .section-image {
     width: 1000px;
     height: 500px;
-}
+} */
 
-#last span {
-    width: 500px;
-    height: 50px;
-    background-color: lightseagreen;
-    order: 1;
+#last h3 {
+    /* width: 500px;
+    height: 50px; */
+    /* background-color: lightseagreen; */
+    /* order: 1; */
 }
 
 #last .section-article, #last .section-image {
-    order: 2;
+    /* order: 2; */
 }
 
 footer {
